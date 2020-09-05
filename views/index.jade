@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to our bakery
+
+  // Wrapper
+  #wrapper
+
+    // PRODUCT LIST
+    h2 Cake List
+    #productList
+      table
+        thead
+          th Name
+          th Price
+          th Amount
+        tbody
+    // /PRODUCT LIST
+
+   
+  // PRODUCT INFO
+  #productInfo
+    h2 Cake Info
+    p
+    strong Name:
+    |  <span id='productInfoName'></span>
+    br
+    strong Ingridients:
+    #productIngredientList
+        table
+        thead
+            th 
+            th 
+        tbody
+  // /PRODUCT INFO
+
+  block script
+    script(src='/javascripts/index.js')

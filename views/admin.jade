@@ -1,0 +1,80 @@
+extends layout
+
+block creationMenu
+    #createNewCake
+        h2 Create a New Cake 
+        p
+            strong Name:
+            input#newCakeName(type='text', placeholder='Name')          
+            br
+            br
+            strong Ingridients:
+            #tempIngredientList
+              table
+                thead
+                  th 
+                  th 
+                tbody
+            br
+            strong New Ingridient 
+            br
+            | <select id="ingridientName" name="ingridient"></select>            
+            input#ingridientAmount(type='text', placeholder='Amount')
+            button#btnAddNewIngredient Add
+            br
+            br
+            button#btnSaveNewCake Save New Cake
+    script(src='/javascripts/cakeCreation.js')
+
+
+
+
+block content
+  h1= title
+ 
+  button#btnClientView SHOP
+  br 
+  br
+  button#btnNewCake CREATE NEW CAKE
+  
+  // Wrapper
+  #wrapper
+    
+    // PUT CAKE ON SALE
+    h2 Add Cake
+    #addCake
+      fieldset
+        | <select id="inputCakeType" name="inputCakeType"></select>            
+        input#inputCakePrice(type='text', placeholder='Price')
+        input#inputCakeAmount(type='text', placeholder='Amount')
+        button#btnAddCake Put On Sell
+    // /PUT CAKE ON SALE
+    br
+    br
+    
+    block creationMenu
+
+
+  // /WRAPPER
+  br
+  br
+  br
+  // Wrapper
+  #wrapper 
+
+    // PRODUCT LIST
+    h2 Shop Window
+    #productList
+      table
+        thead
+          th Name
+          th Price
+          th Date
+          th Amount
+          th Remove?
+        tbody
+    // /PRODUCT LIST
+
+  // /WRAPPER
+block script
+  script(src='/javascripts/admin.js')
