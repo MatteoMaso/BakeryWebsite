@@ -1,9 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to our bakery
+  
+  #leftbar
+    h1= title
+    p Welcome to our bakery
 
+    button#btnAdminView ADMIN
+ 
   // Wrapper
   #wrapper
 
@@ -22,13 +26,12 @@ block content
   // PRODUCT INFO
   #productInfo
     h2 Cake Info
-    p
     strong Name:
     |  <span id='productInfoName'></span>
     br
     strong Ingridients:
-    #productIngredientList
-        table
+    #productInfoIngredientList
+      table
         thead
             th 
             th 
@@ -37,3 +40,4 @@ block content
 
   block script
     script(src='/javascripts/index.js')
+    script(src='/javascripts/initializer.js')

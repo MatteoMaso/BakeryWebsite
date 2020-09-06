@@ -7,7 +7,7 @@ var logger = require('morgan');
 // Database
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/nodetest2');
+var db = monk('localhost:27017/bakerydb');
 
 var indexRouter = require('./routes/index');
 var adminRouter = require('./routes/admin');

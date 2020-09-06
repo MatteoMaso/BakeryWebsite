@@ -75,10 +75,18 @@ function populateProductTable() {
             var day = pad(d.getDate());
             var yyyymmdd = day + '-' + month + '-' + year;
             var name = cakeTypeList.find(x => x._id === this.type).name;
+
+            var old = checkPrice(this.price, this.date) > -1 ? false : true;
             tableContent += '<tr>';
             tableContent += '<td><a href="#" class="linkshowproduct" rel="' + name + '">' + name + '</a></td>';
             tableContent += '<td>' + this.price + '</td>';
-            tableContent += '<td>' + yyyymmdd + '</td>';
+
+            if (old) {
+                tableContent += '<td style="color:red;">' + yyyymmdd + '</td>';
+            } else {
+                tableContent += '<td>' + yyyymmdd + '</td>';
+            }
+            
             tableContent += '<td>' + this.amount + '</td>';
             tableContent += '<td><a href="#" class="linkremoveproduct" rel="' + this._id + '">remove</a></td>';
             tableContent += '</tr>';

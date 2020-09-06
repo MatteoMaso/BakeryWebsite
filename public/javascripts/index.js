@@ -9,34 +9,40 @@ $(document).ready(function () {
     // New cake button click
     $('#productList table tbody').on('click', 'td a.linkshowproduct', showIngridient);
 
-    document.getElementById("productInfo").style.display = "none";
+    $('#btnAdminView').on('click', goToAdminArea);
 
+    document.getElementById("productInfo").style.display = "none";
 });
 
 // Functions =============================================================
+
+function goToAdminArea() {
+    // Simulate an HTTP redirect:
+    window.location.replace("http://localhost:3000/admin");
+};
 
 function showIngridient(event) {
     document.getElementById("productInfo").style.display = "block";
     
     // Empty content string
-    var tableContent = '';
+    var tableContentInfo = '';
     var id = $(this).attr('rel');
     
     var cakeInfo = cakeTypeList.find(x => x._id === id);
-
+    
     var obj = JSON.parse(cakeInfo.ingridients); 
-
+    
     $('#productInfoName').text(cakeInfo.name);
 
     $.each(obj, function () {
-        tableContent += '<tr>';
-        tableContent += '<td>' + this.name + '</td>';
-        tableContent += '<td>' + this.amount + '</td>';
-        tableContent += '</tr>';
+        tableContentInfo += '<tr>';
+        tableContentInfo += '<td>' + this.name + '</td>';
+        tableContentInfo += '<td>' + this.amount + '</td>';
+        tableContentInfo += '</tr>';
     });
 
-    $('#productIngredientList table tbody').html(tableContent);
-
+    $('#productInfoIngredientList table tbody').html(tableContentInfo);
+    
 };
 
 function clenProductInfo() {
@@ -51,12 +57,14 @@ function populateProductTable() {
     $.getJSON('/productlist', function (data) {
         productListData = data;  
         $.each(data, function () {
-            if (this.amount > 0) {
+            var old = checkPrice(this.price, this.date) > -1 ? false : true;
+
+            if (this.amount > 0 && !old) {
                 var d = new Date(this.data);
                 var name = cakeTypeList.find(x => x._id === this.type).name;
                 tableContent += '<tr>';
                 tableContent += '<td><a onmouseout="clenProductInfo()"  class="linkshowproduct" rel="' + this.type + '">' + name + '</a></td>';
-                tableContent += '<td>' + checkPrice(this.price) + '</td>';
+                tableContent += '<td>' + checkPrice(this.price, this.date) + '</td>';
                 tableContent += '<td>' + this.amount + '</td>';
                 tableContent += '</tr>';
             }
@@ -67,7 +75,4 @@ function populateProductTable() {
     });
 };
 
-function checkPrice(currentprice) {
-    // todo check the time passed and return the discount
-    return currentprice;
-};
+
