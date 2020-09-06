@@ -42,7 +42,7 @@ I prezzi dei prodotti vengono calcolati nel seguente modo:
 - prodotti 2 gg prima = 20% prezzo vendita
 - prodotti >2 gg prima = NON VENDIBILI
 - 
-![client view][\https://github.com/MatteoMaso/BakeryWebsite/tree/master/doc/ClientView.PNG]
+![client view][https://github.com/MatteoMaso/BakeryWebsite/tree/master/doc/ClientView.PNG]
 
 ### Admin
 
@@ -50,7 +50,7 @@ I prezzi dei prodotti vengono calcolati nel seguente modo:
 - Creare dei lotto di produzione, viene scelto il tipo di torta, il numero di elementi disponibili e il prezzo.
 - Possono eliminare i lotti di produzione (vengono segnaliti i blocchi vecchi = > 3gg dalla messa in vendita).
 
-![admin view][\https://github.com/MatteoMaso/BakeryWebsite/tree/master/doc/adminView.PNG]
+![admin view][https://github.com/MatteoMaso/BakeryWebsite/tree/master/doc/adminView.PNG]
 
 ## Requisiti
 
