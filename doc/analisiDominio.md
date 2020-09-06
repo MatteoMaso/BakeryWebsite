@@ -1,7 +1,5 @@
 # Analisi del dominio
 
-1. Analisi del dominio e implementare la soluzione software. La pasticceria vende dolci che hanno un nome ed un prezzo. Ogni dolce è composto da una lista di ingredienti. Opzionale: indicare di ogni ingrediente quantità e unità di misura. Opzionale: La gestione della pasticceria è in mano a Luana e Maria che vogliono avere il proprio account per poter accedere all'area di backoffice tramite email e password. Nell’area di backoffice si possono gestire (CRUD) i dolci e metterli in vendita con una certa disponibilità (esempio: 3 torte paradiso in vendita). I dolci in vendita invecchiano ed in base al tempo trascorso dalla loro messa in vendita hanno prezzi diversi: primo giorno prezzo pieno, secondo giorno costano l’80%, il terzo giorno il 20%. Il quarto giorno non sono commestibili e devono essere ritirati dalla vendita. Realizzare una pagina vetrina dove tutti possono vedere la lista di dolci disponibili e il prezzo relativo. Opzionale: andando nella pagina del dettaglio del dolce (o tramite overlayer), si scoprono gli ingredienti indicati dalla ricetta.
-
 ## Contesto
 
 L'applicazione deve girare all'interno di una pasticceria di piccole dimensioni. 2-operatrici admin e una pagina clienti.
