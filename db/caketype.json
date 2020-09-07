@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "5f5392acb3dde24d00af5700"
+  },
+  "name": "tortino di carote",
+  "ingridients": "[{\"id\":\"5f5362ee3b089a412b33989b\",\"name\":\"carrots g\",\"amount\":\"100\"},{\"id\":\"5f5362fe3b089a412b33989c\",\"name\":\"milk ml\",\"amount\":\"50\"},{\"id\":\"5f5362413b089a412b339896\",\"name\":\"flower g\",\"amount\":\"70\"}]"
+},{
+  "_id": {
+    "$oid": "5f539329b3dde24d00af5702"
+  },
+  "name": "tortino di cioccolato",
+  "ingridients": "[{\"id\":\"5f5362d23b089a412b339899\",\"name\":\"chocolate g\",\"amount\":\"100\"},{\"id\":\"5f53628e3b089a412b339897\",\"name\":\"butter g\",\"amount\":\"50\"},{\"id\":\"5f5362fe3b089a412b33989c\",\"name\":\"milk ml\",\"amount\":\"35\"}]"
+},{
+  "_id": {
+    "$oid": "5f539397b3dde24d00af5703"
+  },
+  "name": "meringata",
+  "ingridients": "[{\"id\":\"5f5362413b089a412b339896\",\"name\":\"flower g\",\"amount\":\"50\"},{\"id\":\"5f5362de3b089a412b33989a\",\"name\":\"vanilla g\",\"amount\":\"5\"},{\"id\":\"5f5362fe3b089a412b33989c\",\"name\":\"milk ml\",\"amount\":\"80\"}]"
+},{
+  "_id": {
+    "$oid": "5f539e28e169452a1827c741"
+  },
+  "name": "torta della nonna",
+  "ingridients": "[{\"id\":\"5f5362413b089a412b339896\",\"name\":\"flower g\",\"amount\":\"100\"},{\"id\":\"5f53628e3b089a412b339897\",\"name\":\"butter g\",\"amount\":\"50\"}]"
+}]

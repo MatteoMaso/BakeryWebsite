@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "5f539d9fe169452a1827c73f"
+  },
+  "type": "5f539397b3dde24d00af5703",
+  "price": "12",
+  "amount": "5",
+  "date": "Sat Sep 02 2020 16:15:59 GMT+0200 (Ora legale dell’Europa centrale)"
+},{
+  "_id": {
+    "$oid": "5f539da3e169452a1827c740"
+  },
+  "type": "5f5392acb3dde24d00af5700",
+  "price": "2",
+  "amount": "2",
+  "date": "Sat Sep 05 2020 16:16:03 GMT+0200 (Ora legale dell’Europa centrale)"
+},{
+  "_id": {
+    "$oid": "5f539e37e169452a1827c742"
+  },
+  "type": "5f539e28e169452a1827c741",
+  "price": "50",
+  "amount": "1",
+  "date": "Sat Sep 05 2020 16:18:31 GMT+0200 (Ora legale dell’Europa centrale)"
+},{
+  "_id": {
+    "$oid": "5f53b10ae169452a1827c749"
+  },
+  "type": "5f539329b3dde24d00af5702",
+  "price": "2",
+  "amount": "3",
+  "date": "Sat Sep 05 2020 17:38:50 GMT+0200 (Ora legale dell’Europa centrale)"
+}]

@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "5f5362413b089a412b339896"
+  },
+  "name": "flower",
+  "unit": "g"
+},{
+  "_id": {
+    "$oid": "5f53628e3b089a412b339897"
+  },
+  "name": "butter",
+  "unit": "g"
+},{
+  "_id": {
+    "$oid": "5f5362a83b089a412b339898"
+  },
+  "name": "sugar",
+  "unit": "g"
+},{
+  "_id": {
+    "$oid": "5f5362d23b089a412b339899"
+  },
+  "name": "chocolate",
+  "unit": "g"
+},{
+  "_id": {
+    "$oid": "5f5362de3b089a412b33989a"
+  },
+  "name": "vanilla",
+  "unit": "g"
+},{
+  "_id": {
+    "$oid": "5f5362ee3b089a412b33989b"
+  },
+  "name": "carrots",
+  "unit": "g"
+},{
+  "_id": {
+    "$oid": "5f5362fe3b089a412b33989c"
+  },
+  "name": "milk",
+  "unit": "ml"
+}]
